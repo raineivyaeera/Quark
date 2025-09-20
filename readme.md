@@ -1,3 +1,3 @@
 # Quark: Tiny prompt, massive ideas
 ## Jam with randomness
-Being a huge fan of Oblique Strategies
+in 2019, I discovered this incredible project made by Brian Eno (a musical and artistic legend known for being the godfather of Ambient music, helping Talking Heads, David Bowie, DEVO, U2, Coldplay, and more create their most acclaimed releases) and a painter by the name of Peter Schmidt.It was apparently an index card set created to help creative "ruts" and when you don't know where to begin on a project, giving you very (at times) abstract prompts to get your mind stirring of ideas as of where to take things with that unique limitation in the card it gave. The name of the card set? Oblique Strategies. I thought "wow that sounds badass, what the fuck!!", I used it right away and had a *blast*. Later on the next year I read a book named "Visual Music" about Brian Eno's creative process, being a multi-dimensional artist. Going over how creative systems
