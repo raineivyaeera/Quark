@@ -1,1 +1,2 @@
-# Quark: tiny prompt, massive ideas - jam with randomness
+# Quark:
+# Tiny prompt, massive ideas - jam with randomness
