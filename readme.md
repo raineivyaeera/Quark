@@ -1,2 +1,2 @@
-# hello :3
-you're looking spiffy today
+# Quark: tiny prompt, massive ideas - jam with randomness
+testing

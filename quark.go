@@ -60,12 +60,11 @@ func setup() {
 	timeSignature = append(timeSignature, "4/4", "3/4", "6/8", "5/4", "3/8", "5/8", "6/4", "7/8", "7/4", "9/4", "10/4", "10/8", "11/4", "11/8", "13/4", "13/8", "14/4", "14/8", "15/4", "15/8")
 }
 
-func colorizeText() string {
-	c1 := strconv.Itoa(rand.IntN(255))
-	c2 := strconv.Itoa(rand.IntN(255))
-	c3 := strconv.Itoa(rand.IntN(255))
-	var colorString string = "\033[38;2;" + c1 + ";" + c2 + ";" + c3 + "m"
-	return colorString
+func colorizeText(text string) string {
+    r := rand.IntN(256)
+    g := rand.IntN(256)
+    b := rand.IntN(256)
+    return fmt.Sprintf("\033[38;2;%d;%d;%dm%s\033[0m", r, g, b, text)
 }
 
 func pullCard() {
@@ -96,18 +95,16 @@ func pullCard() {
 			rhythm = append(rhythm, "-")
 		}
 	}
-	if xCount == 0 {
-		rhythm[len(rhythm)-1] = "x"
-	}
-	fmt.Println(colorizeText(), "QUARK", "\033[0m")
-	fmt.Println("\nCard: ", card[rnCard])
-	fmt.Println("Emoji: ", emoji[rnEmoji])
-	fmt.Println("Genre: ", genre[rnGenre])
-	fmt.Println("Texture/Sense: ", texture[rnTexture])
-	fmt.Println("\nChord Progression:", chordProgression)
-	fmt.Println("BPM: ", BPM)
-	fmt.Println("Time Signature:", timeSignature[rnTimesig])
-	fmt.Println("Rhythm: ", rhythm); fmt.Println()
+	if xCount == 0 { rhythm[len(rhythm)-1] = "x" }
+	fmt.Printf(colorizeText("\nQUARK\n\n"))
+	fmt.Printf("Card: %s\n", card[rnCard])
+	fmt.Printf("Emoji: %s\n", emoji[rnEmoji])
+	fmt.Printf("Genre: %s\n", genre[rnGenre])
+	fmt.Printf("Texture/Sense: %s\n\n", texture[rnTexture])
+	fmt.Printf("Chord Progression: %s\n", chordProgression)
+	fmt.Printf("BPM: %d\n", BPM)
+	fmt.Printf("Time Signature: %s\n", timeSignature[rnTimesig])
+	fmt.Printf("Rhythm: %s\n\n", rhythm)
 }
 
 func main() {
