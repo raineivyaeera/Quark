@@ -1,3 +1,3 @@
-# Quark: Tiny prompt, massive ideas
-### jam with randomness
+# Quark: Small prompt, massive ideas
+## Jam with randomness
 Being a huge fan of Oblique Strategies
