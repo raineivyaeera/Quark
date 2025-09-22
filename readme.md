@@ -15,16 +15,15 @@ This time, it feels delighting, playful, and actually fun to use. The version I 
 Affectionately named Quark - meaning smallest unit of matter - it means that from a tiny input and idea, it spawns a rippling tidal change. Whether that's to a freshly started up music project, sound design, writing, or an in-progress painting - really anything you want to apply it to! Also, each section in Quark can be omitted or included as you feel. The point is ***not*** that you use all the settings at a given time - although you 100% can - but that you simply get thrown into a different direction than you normally, helping keep your creativity fresh. Pick the pieces you like and that *inspire you*.
 
 ## Catagories/Features:
-###(General)
+### (General)
 1. Card => The heart of the application, it gives you an abstract card that you can interpret in anyway you'd like.
 2. Sensory => Essentially texture to get you thinking, your 5 senses of sight, hearing, touch, taste, and smell.
-3. Emoji => Random Emoji! There are 1500+ of em
-4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. 6200+ of these btw, so good luck seeing the same one twice
-
-###(Music specifics)
-5. Chord progression => A modal chord progression generator using all 7 modes of the major scale!
-6. BPM => The beats per minute of the song
-7. Time signature => The division of time the song is using
-8. Rhythm => Rhythm in the time signature
+3. Emoji => Random Emoji! There are 1500+ of em!
+4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. 6200+ of these btw, so good luck seeing the same one twice!
+### (Music Specific Settings)
+6. Chord progression => A modal chord progression generator using all 7 modes of the major scale.
+7. BPM => The beats per minute of the song.
+8. Time signature => Division of time the song is using.
+9. Rhythm => Beats to hit in the given time signature.
 
 ## Why this is so cool
