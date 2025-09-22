@@ -1,6 +1,6 @@
 # Quark: Tiny prompt, massive ideas
 ## A jam with randomness
-In 2019, I discovered this incredible project made by Brian Eno (a musical and artistic legend known for being the godfather of Ambient music, helping Talking Heads, David Bowie, DEVO, U2, Coldplay, etc. to create their most acclaimed releases) and a painter by the name of Peter Schmidt. It was apparently an index card set created to help creative "ruts" by giving you very (at times) abstract prompts to get your mind stirring of ideas with that unique limitation in mind. The name of the set? Oblique Strategies. I thought "wow that sounds so cool, what the fuck!", I used it right away, never looking back. 2020 I read a book named "Visual Music" about Brian Eno's creative process. Going over how creative fields don't exist in a vacuum, how different disciplines/interests drive others and how generative systems can be made to create art based on patterns (regardless of the medium).
+In 2019, I discovered this incredible project made by Brian Eno (a musical and artistic legend known for being the godfather of Ambient music, helping Talking Heads, David Bowie, DEVO, U2, Coldplay, etc. to create their most acclaimed releases) and a painter by the name of Peter Schmidt. It was apparently an index card set created to help creative "ruts" by giving you very (at times) abstract prompts to get your mind stirring of ideas with that unique limitation in mind. The name of the set? Oblique Strategies. I thought "wow that sounds so cool, what the fuck!", I used it right away, never looking back. In 2020 I read a book named "Visual Music" about Brian Eno's creative process. Going over how creative fields don't exist in a vacuum, how different disciplines/interests drive others and how generative systems can be made to create art based on patterns (regardless of the medium).
 
 March of 2021, I made a P5.JS + Godot project based around compiling all cards across all editions of Oblique Strategies. Fast forward *another* year and a half, in 2023, I decided to say "y'know what, let me make my own card set!". That edition still being available at:
 [Velvet Dice](https://raineivyaeera.github.io/raineland/Velvet%20Dice/velvetdice.html)
@@ -28,7 +28,7 @@ This isn't just noise either, it's a spark that leads you to somewhere very inte
 4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. (6200+ of these btw, so good luck seeing the same one twice!)
 #### (Music specific settings)
 5. Chord progression => A modal chord progression generator using all 7 modes of the major scale.
-6. BPM => The beats per minute of the song. (from 40 bpm - 200)
+6. BPM => The beats per minute of the song. (40 - 200 bpm)
 7. Time signature => Division of time the song is using.
 8. Rhythm => Beats to hit in the given time signature.
 
@@ -44,4 +44,4 @@ Happy Quarking!~
 
 Discord: raineeera
 
-email: raineivyaeera@gmail.com
+Email: raineivyaeera@gmail.com
