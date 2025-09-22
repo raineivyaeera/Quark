@@ -20,10 +20,16 @@ Affectionately named Quark - meaning smallest unit of matter - it means that fro
 2. Sensory => Essentially texture to get you thinking, your 5 senses of sight, hearing, touch, taste, and smell.
 3. Emoji => Random Emoji! There are 1500+ of em!
 4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. 6200+ of these btw, so good luck seeing the same one twice!
-### (Music Specific Settings)
-6. Chord progression => A modal chord progression generator using all 7 modes of the major scale.
-7. BPM => The beats per minute of the song.
-8. Time signature => Division of time the song is using.
-9. Rhythm => Beats to hit in the given time signature.
+### (Music specific settings)
+5. Chord progression => A modal chord progression generator using all 7 modes of the major scale.
+6. BPM => The beats per minute of the song.
+7. Time signature => Division of time the song is using.
+8. Rhythm => Beats to hit in the given time signature.
 
 ## Why this is so cool
+This isn't just noise, it's a spark that leads you to somewhere very interesting, it quite literally encourages and gives you the space to *explore*, rather than be stuck in your usual patterns and way of doing things. So often when we create, it's the same motions we operate and work off of and we dont even realize it. This shakes that up entirely by making you more intentional, aware, and feeding you new inspiration to create with. Often times I get a card pull that makes me create the most weirdly gorgeous thing that I would have NEVER created otherwise. Giving me a genre like "russian folk rock" or "hyperpop brasileiro" (Brazil mentioned). I mean, look at these cards I pulled and tell me it doesn't make you feel inspired.
+<img width="708" height="349" alt="image" src="https://github.com/user-attachments/assets/8319508b-6f53-42fd-9a98-cf39c0c3ef86" />
+<img width="767" height="297" alt="image" src="https://github.com/user-attachments/assets/6e5688e4-a1e4-4c5b-8387-a451129173b1" />
+<img width="711" height="305" alt="image" src="https://github.com/user-attachments/assets/e4e86b26-1713-463e-ac61-ead52980d8ee" />
+
+#
