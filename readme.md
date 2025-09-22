@@ -23,7 +23,7 @@ This isn't just noise either, it's a spark that leads you to somewhere very inte
 ### Catagories/Features:
 #### (General)
 1. Card => The heart of the application, it gives you an abstract card that you can interpret in anyway you'd like. (60 count)
-2. Sensory => Essentially texture to get you thinking, your 5 senses of sight, hearing, touch, taste, and smell. (101 count)
+2. Sensory => To get you thinking in terms of the 5 senses (101 count)
 3. Emoji => Random Emoji! (1500+ of these guys)
 4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. (6200+ of these btw, so good luck seeing the same one twice!)
 #### (Music specific settings)
@@ -35,7 +35,10 @@ This isn't just noise either, it's a spark that leads you to somewhere very inte
 Don't like a certain pull from a section? You can type in the number of that section and have it reroll just that, keeping the rest of your cards intact. Important to add, there's no shame in doing this or wanting a different result or vibe! So please feel free to. 
 
 ## Conclusionary
-I made this little application because not only did I wanted to further drive my musical adventures, wanting a tailor made version of Oblique Strategies but expanded and personalized, but just as importantly: I want to drive other people to create with this thing and give them something fun as hell to use. So here's what I'll say:
-If you create anything with this tool, feel free to message me anywhere sharing what you made. Thank you so much for taking time out of your day to read the readme for this silly simple, but important, project.
+I made this little application because not only did I wanted to further drive my musical adventures, wanting a tailor made version of Oblique Strategies but expanded and personalized, but just as importantly: I want to drive other people to create with this thing and give them something fun as hell to use. And even helping people break out of art block, which can really suck when you're in the midst of it. So here's what I'll say:
+
+If you create anything with this tool, feel free to message me anywhere sharing what you made. Would be delighted to take a look/listen. Thank you so much for taking time out of your day to read the readme for this silly project.
+Discord: raineeera
+email: raineivyaeera@gmail.com
 
 Happy Quarking!~
