@@ -14,6 +14,12 @@ This time, it feels delighting, playful, and actually fun to use. The version I 
 ## A Quark!
 Affectionately named Quark - meaning smallest unit of matter - it means that from a tiny input and idea, it spawns a rippling tidal change. Whether that's to a freshly started up music project, sound design, writing, or an in-progress painting - really anything you want to apply it to! Also, each section in Quark can be omitted or included as you feel. The point is ***not*** that you use all the settings at a given time - although you 100% can - but that you simply get thrown into a different direction than you normally, helping keep your creativity fresh. Pick the pieces you like and that *inspire you*.
 
+This isn't just noise either, it's a spark that leads you to somewhere very interesting, it quite literally encourages and gives you the space to actively *explore*, rather than be stuck in your usual patterns and way of doing things. So often when we create, it's the same motions we operate and work off of and we dont even realize it. This shakes that up entirely by making you more intentional, aware, and feeding you new inspiration to create with. Often times I get a card pull that makes me create the most weirdly gorgeous thing that I would have NEVER created otherwise. Giving me a genre like "russian folk rock" or "hyperpop brasileiro" (Brazil mentioned). I mean, look at these cards I pulled and tell me it doesn't make you feel inspired.
+
+<img width="1853" height="795" alt="image" src="https://github.com/user-attachments/assets/7755fd77-0e6e-49f1-acb6-c71ab4168c01" />
+<img width="1864" height="731" alt="492189475-6e5688e4-a1e4-4c5b-8387-a451129173b1" src="https://github.com/user-attachments/assets/e28504e2-d14d-4575-9f74-75b2f655120b" />
+<img width="1860" height="809" alt="492190449-e4e86b26-1713-463e-ac61-ead52980d8ee" src="https://github.com/user-attachments/assets/44694e18-5ca8-4d9f-8dc8-c8acac223d1f" />
+
 ## Catagories/Features:
 ### (General)
 1. Card => The heart of the application, it gives you an abstract card that you can interpret in anyway you'd like.
@@ -26,11 +32,5 @@ Affectionately named Quark - meaning smallest unit of matter - it means that fro
 7. Time signature => Division of time the song is using.
 8. Rhythm => Beats to hit in the given time signature.
 
-## Why this is so cool
-This isn't just noise, it's a spark that leads you to somewhere very interesting, it quite literally encourages and gives you the space to *explore*, rather than be stuck in your usual patterns and way of doing things. So often when we create, it's the same motions we operate and work off of and we dont even realize it. This shakes that up entirely by making you more intentional, aware, and feeding you new inspiration to create with. Often times I get a card pull that makes me create the most weirdly gorgeous thing that I would have NEVER created otherwise. Giving me a genre like "russian folk rock" or "hyperpop brasileiro" (Brazil mentioned). I mean, look at these cards I pulled and tell me it doesn't make you feel inspired.
-
-<img width="1853" height="795" alt="image" src="https://github.com/user-attachments/assets/7755fd77-0e6e-49f1-acb6-c71ab4168c01" />
-<img width="1864" height="731" alt="492189475-6e5688e4-a1e4-4c5b-8387-a451129173b1" src="https://github.com/user-attachments/assets/e28504e2-d14d-4575-9f74-75b2f655120b" />
-<img width="1860" height="809" alt="492190449-e4e86b26-1713-463e-ac61-ead52980d8ee" src="https://github.com/user-attachments/assets/44694e18-5ca8-4d9f-8dc8-c8acac223d1f" />
 
 ## Conclusionary
