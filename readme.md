@@ -32,5 +32,6 @@ This isn't just noise, it's a spark that leads you to somewhere very interesting
 <img width="1893" height="731" alt="image" src="https://github.com/user-attachments/assets/2091da28-2f48-4cfd-b705-1c98d04dbaf7" />
 <img width="1893" height="731" alt="image" src="https://github.com/user-attachments/assets/354f4650-64cb-488e-86e6-706bdfd00d20" />
 <img width="1893" height="731" alt="image" src="https://github.com/user-attachments/assets/1a8bee81-4f64-4844-854b-c3e5d2f1c712" />
+<img width="1860" height="809" alt="492190449-e4e86b26-1713-463e-ac61-ead52980d8ee" src="https://github.com/user-attachments/assets/44694e18-5ca8-4d9f-8dc8-c8acac223d1f" />
 
 ## Conclusionary
