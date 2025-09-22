@@ -22,13 +22,13 @@ This isn't just noise either, it's a spark that leads you to somewhere very inte
 
 ### Catagories/Features:
 #### (General)
-1. Card => The heart of the application, it gives you an abstract card that you can interpret in anyway you'd like.
-2. Sensory => Essentially texture to get you thinking, your 5 senses of sight, hearing, touch, taste, and smell.
-3. Emoji => Random Emoji! There are 1500+ of em!
-4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. 6200+ of these btw, so good luck seeing the same one twice!
+1. Card => The heart of the application, it gives you an abstract card that you can interpret in anyway you'd like. (60 count)
+2. Sensory => Essentially texture to get you thinking, your 5 senses of sight, hearing, touch, taste, and smell. (101 count)
+3. Emoji => Random Emoji! (1500+ of these guys)
+4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. (6200+ of these btw, so good luck seeing the same one twice!)
 #### (Music specific settings)
 5. Chord progression => A modal chord progression generator using all 7 modes of the major scale.
-6. BPM => The beats per minute of the song.
+6. BPM => The beats per minute of the song. (from 40 bpm - 200)
 7. Time signature => Division of time the song is using.
 8. Rhythm => Beats to hit in the given time signature.
 
