@@ -37,11 +37,8 @@ Don't like a certain pull from a section? You can type in the number of that sec
 ## Conclusionary
 I made this little application because not only did I wanted to further drive my musical adventures, wanting a tailor made version of Oblique Strategies but expanded and personalized, but just as importantly: I want to drive other people to create with this thing and give them something fun as hell to use. And even helping people break out of art block, which can really suck when you're in the midst of it. So here's what I'll say:
 
-If you create anything with this tool, feel free to message me anywhere sharing what you made. Would be delighted to take a look/listen. Thank you so much for taking time out of your day to read the readme for this silly project.
+If you create anything with this tool, feel free to message me anywhere sharing what you made. Would be delighted to take a look/listen. Thank you so much for taking time out of your day to read the readme for this silly project. Happy Quarking!~
 
 Discord: raineeera
 
 email: raineivyaeera@gmail.com
-
-
-Happy Quarking!~
