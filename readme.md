@@ -35,9 +35,12 @@ This isn't just noise either, it's a spark that leads you to somewhere very inte
 Don't like a certain pull from a section? You can type in the number of that section and have it reroll just that, keeping the rest of your cards intact. Important to add, there's no shame in doing this or wanting a different result or vibe! So please feel free to. 
 
 ## Conclusionary
-I made this little application because not only did I wanted to further drive my musical adventures, wanting a tailor made version of Oblique Strategies but expanded and personalized, but just as importantly: I want to drive other people to create with this thing and give them something fun as hell to use. And even helping people break out of art block, which can really suck when you're in the midst of it. So here's what I'll say:
+I made this little application because not only did I want to improve my musical adventures - wanting a tailor made version of Oblique Strategies but expanded and personalized - but just as importantly I wanted to give people a fun tool to help them break out of creative ruts & art block. So here's what I'll say:
 
-If you create anything with this tool, feel free to message me anywhere sharing what you made. Would be delighted to take a look/listen. Thank you so much for taking time out of your day to read the readme for this silly project. Happy Quarking!~
+If you create anything with this tool, feel free to message me anywhere sharing what you made. I'd be delighted to take a look/listen.
+Thank you so much for taking time out of your day to read the readme for this silly project.
+
+Happy Quarking!~
 
 Discord: raineeera
 
