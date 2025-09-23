@@ -80,7 +80,7 @@ func pullCard() {
 			chordProgression = append(chordProgression, "=>")
 		} else { chordProgression = append(chordProgression, chord[rnChord]) } 
 	}
-	BPM = (rand.IntN(180)) + 40
+	BPM = (rand.IntN(160)) + 40
 	rhythmNumString := strings.Split(timeSignature[rnTimesig], "/")[0]
 	rhythmNum, err := strconv.Atoi(rhythmNumString); if err != nil {
 		panic(err)
@@ -98,9 +98,9 @@ func pullCard() {
 	if xCount == 0 { rhythm[len(rhythm)-1] = "x" }
 	fmt.Printf(colorizeText("\nQUARK\n\n"))
 	fmt.Printf("Card: %s\n", card[rnCard])
+	fmt.Printf("Sensory: %s\n", texture[rnTexture])
 	fmt.Printf("Emoji: %s\n", emoji[rnEmoji])
-	fmt.Printf("Genre: %s\n", genre[rnGenre])
-	fmt.Printf("Texture/Sense: %s\n\n", texture[rnTexture])
+	fmt.Printf("Tone–Genre: %s\n\n", genre[rnGenre])
 	fmt.Printf("Chord Progression: %s\n", chordProgression)
 	fmt.Printf("BPM: %d\n", BPM)
 	fmt.Printf("Time Signature: %s\n", timeSignature[rnTimesig])
