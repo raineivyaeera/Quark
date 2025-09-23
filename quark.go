@@ -81,6 +81,18 @@ func pullCard() {
 		} else { chordProgression = append(chordProgression, chord[rnChord]) } 
 	}
 	BPM = (rand.IntN(160)) + 40
+	if BPM <= 100 {
+		rng := rand.IntN(10)
+		if rng >= 3 {
+			BPM += (rand.IntN(40)+20)
+		}
+	}
+	if BPM >= 150 {
+		rng := rand.IntN(10)
+		if rng >= 3 {
+			BPM -= (rand.IntN(40)+20)
+		}
+	}
 	rhythmNumString := strings.Split(timeSignature[rnTimesig], "/")[0]
 	rhythmNum, err := strconv.Atoi(rhythmNumString); if err != nil {
 		panic(err)
