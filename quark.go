@@ -1,201 +1,168 @@
 package main
 
-import (
-	"encoding/json"
-	"fmt"
-	"math/rand/v2"
-	"os"
-	"strconv"
-	"strings"
-)
+import "encoding/json"
+import "fmt"
+import "math/rand/v2"
+import "os"
+import "strconv"
+import "strings"
 
-var cardable, emojiable, genreable, texturable, timeable, chordable, bpmable, colorable, rhythmable bool
-var card []string
-var emoji []string
-var texture []string
-var genre []string
-var chord []string
-var chordProgression []string
-var timeSignature []string
-var rhythm []string
-var BPM int
-var rnCard int 
-var rnEmoji int 
-var rnGenre int
-var rnTexture int
-var rnTimesig int
-var r, g, b int
-var firstDraw bool = true
+type Quark struct {
+	Entry []string
+	Index int
+	Randomize bool
+}
+
+var card, sensory, emoji, genre, chord, bpm, time, rhythm, color Quark
+var chordProg []string
 var input string
 
+func loadJSON(filename string, target *[]string) {
+	f, err := os.Open(filename)
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+
+	if err := json.NewDecoder(f).Decode(target); err != nil {
+		panic(err)
+	}
+}
+
 func setup() {
-	setBools()
-	fileCard, errCard := os.Open("cards.json")
-	if errCard != nil {
-		panic(errCard)
-	}; defer fileCard.Close()
-	errCard = json.NewDecoder(fileCard).Decode(&card)
-	if errCard != nil {
-		panic(errCard)
-	}
-	fileEmoji, errEmoji := os.Open("emojis.json")
-	if errEmoji != nil {
-		panic(errEmoji)
-	}; defer fileEmoji.Close()
-	errEmoji = json.NewDecoder(fileEmoji).Decode(&emoji)
-	if errEmoji != nil {
-		panic(errEmoji)
-	}
-	fileGenre, errGenre := os.Open("genres.json")
-	if errGenre != nil {
-		panic(errGenre)
-	}; defer fileGenre.Close()
-	errGenre = json.NewDecoder(fileGenre).Decode(&genre)
-	if errGenre != nil {
-		panic(errGenre)
-	}
-	fileTexture, errTexture := os.Open("textures.json")
-	if errTexture != nil {
-		panic (errTexture)
-	}; defer fileTexture.Close()
-	errTexture = json.NewDecoder(fileTexture).Decode(&texture)
-	if errTexture != nil {
-		panic(errTexture)
-	}
-	fileChords, errChords := os.Open("chords.json")
-	if errChords != nil {
-		panic (errChords)
-	}; defer fileChords.Close()
-	errChords = json.NewDecoder(fileChords).Decode(&chord)
-	if errChords != nil {
-		panic(errChords)
-	}
-	timeSignature = append(timeSignature, "4/4", "3/4", "6/8", "5/4", "3/8", "5/8", "6/4", "7/8", "7/4", "9/4", "10/4", "10/8", "11/4", "11/8", "13/4", "13/8", "14/4", "14/8", "15/4", "15/8")
+	loadJSON("cards.json", &card.Entry)
+	loadJSON("textures.json", &sensory.Entry)
+	loadJSON("emojis.json", &emoji.Entry)
+	loadJSON("genres.json", &genre.Entry)
+	loadJSON("chords.json", &chord.Entry)
+
+	time.Entry = []string{"4/4", "3/4", "6/8", "5/4", "3/8", "5/8", "6/4", "7/8", "7/4", "9/4", "10/4", "10/8", "11/4", "11/8", "13/4", "13/8", "14/4", "14/8", "15/4", "15/8"}
+
+	card.Randomize, sensory.Randomize, emoji.Randomize, genre.Randomize, chord.Randomize, bpm.Randomize, time.Randomize, rhythm.Randomize, color.Randomize = true, true, true, true, true, true, true, true, true
 }
 
-func clearBools() {
-	cardable, emojiable, genreable, texturable, timeable, chordable, bpmable, colorable, rhythmable = false, false, false, false, false, false, false, false, false;
-}
-
-func setBools() {
-	cardable, emojiable, genreable, texturable, timeable, chordable, bpmable, colorable, rhythmable = true, true, true, true, true, true, true, true, true;
-}
-
-func colorizeText(text string) string {
-	if colorable {
-    	r = rand.IntN(256)
-    	g = rand.IntN(256)
-    	b = rand.IntN(256)
+func pickRandom(q *Quark) {
+	if q.Randomize && len(q.Entry) > 0 {
+		q.Index = rand.IntN(len(q.Entry))
 	}
-    return fmt.Sprintf("\033[38;2;%d;%d;%dm%s\033[0m", r, g, b, text)
+}
+
+func pickBPM(q *Quark) {
+	if q.Randomize {
+		q.Index = 40 + rand.IntN(160)
+		rng := rand.IntN(10)
+		if q.Index <= 100 && rng >= 3 {
+			q.Index += rand.IntN(55) + 25
+		}
+		if q.Index >= 150 && rng >= 3 {
+			q.Index -= rand.IntN(55) + 25
+		}
+	}
+}
+
+func pickColor(q *Quark) {
+	if q.Randomize {
+		r := rand.IntN(256)
+		g := rand.IntN(256)
+		b := rand.IntN(256)
+		colorStr := fmt.Sprintf("\033[38;2;%d;%d;%dmQUARK\033[0m", r, g, b)
+		q.Entry = []string{colorStr}
+		q.Index = 0
+	}
+}
+
+func colorizeText(q *Quark) string {
+	return q.Entry[q.Index]
 }
 
 func pullCard() {
-	if cardable { rnCard = rand.IntN(len(card)) }
-	if emojiable { rnEmoji = rand.IntN(len(emoji)) }
-	if genreable { rnGenre = rand.IntN(len(genre)) }
-	if texturable { rnTexture = rand.IntN(len(texture)) }
-	if timeable { rnTimesig = rand.IntN(len(timeSignature)) }	
-	if chordable {
-		chordProgression = nil
-		for i:=0; i < 4; i++ {
-			var rnChord int = rand.IntN(len(chord))
+	pickRandom(&card)
+	pickRandom(&sensory)
+	pickRandom(&emoji)
+	pickRandom(&genre)
+	pickRandom(&chord)
+	pickRandom(&time)
+	pickRandom(&rhythm)
+	pickBPM(&bpm)
+	pickColor(&color)
+
+	if chord.Randomize {
+		chordProg = nil
+		for i := 0; i < 4; i++ {
+			chordProg = append(chordProg, chord.Entry[rand.IntN(len(chord.Entry))])
 			if i < 3 {
-				chordProgression = append(chordProgression, chord[rnChord]);
-				chordProgression = append(chordProgression, "=>")
-			} else { chordProgression = append(chordProgression, chord[rnChord]) } 
-		} 
-	}
-	if bpmable {
-		BPM = (rand.IntN(160)) + 40
-		rng := rand.IntN(10)
-		if BPM <= 100 && rng >= 3 {
-			BPM += (rand.IntN(50)+25)
-		}
-		if BPM >= 150 && rng >= 3 {
-			BPM -= (rand.IntN(50)+25)
-		}
-	}
-	if rhythmable {
-		rhythmNumString := strings.Split(timeSignature[rnTimesig], "/")[0]
-		rhythmNum, err := strconv.Atoi(rhythmNumString); if err != nil {
-			panic(err)
-		}
-		rhythm = []string{}
-		var xCount int = 0
-		for i:=0; i < rhythmNum; i++ {
-			rn := rand.IntN(2)
-			if rn > 0 {
-				rhythm = append(rhythm, "x"); xCount++
-			} else {
-			rhythm = append(rhythm, "-")
+				chordProg = append(chordProg, "=>")
 			}
 		}
-		if xCount == 0 { rhythm[len(rhythm)-1] = "x" }
 	}
 
-	fmt.Printf(colorizeText("\nQUARK\n\n"))
-	fmt.Printf("Card: %s\n", card[rnCard])
-	fmt.Printf("Sensory: %s\n", texture[rnTexture])
-	fmt.Printf("Emoji: %s\n", emoji[rnEmoji])
-	fmt.Printf("Tone–Genre: %s\n\n", genre[rnGenre])
-	fmt.Printf("Chord Progression: %s\n", chordProgression)
-	fmt.Printf("BPM: %d\n", BPM)
-	fmt.Printf("Time Signature: %s\n", timeSignature[rnTimesig])
-	fmt.Printf("Rhythm: %s\n\n", rhythm)
+	if rhythm.Randomize {
+		numStr := strings.Split(time.Entry[time.Index], "/")[0]
+		count, err := strconv.Atoi(numStr)
+		if err != nil {
+			panic(err)
+		}
+		rhythm.Entry = nil
+		xCount := 0
+		for i := 0; i < count; i++ {
+			if rand.IntN(2) > 0 {
+				rhythm.Entry = append(rhythm.Entry, "x")
+				xCount++
+			} else {
+				rhythm.Entry = append(rhythm.Entry, "-")
+			}
+		}
+		if xCount == 0 && len(rhythm.Entry) > 0 {
+			rhythm.Entry[len(rhythm.Entry)-1] = "x"
+		}
+	}
+
+	fmt.Printf("\n%s\n\n", colorizeText(&color))
+	fmt.Printf("Card: %s\n", card.Entry[card.Index])
+	fmt.Printf("Sensory: %s\n", sensory.Entry[sensory.Index])
+	fmt.Printf("Emoji: %s\n", emoji.Entry[emoji.Index])
+	fmt.Printf("Tone–Genre: %s\n\n", genre.Entry[genre.Index])
+	fmt.Printf("Chord Progression: %s\n", strings.Join(chordProg, " "))
+	fmt.Printf("BPM: %d\n", bpm.Index)
+	fmt.Printf("Time Signature: %s\n", time.Entry[time.Index])
+	fmt.Printf("Rhythm: %s\n\n", strings.Join(rhythm.Entry, " "))
+}
+
+func disableAll() {
+	card.Randomize, sensory.Randomize, emoji.Randomize, genre.Randomize, chord.Randomize, bpm.Randomize, time.Randomize, rhythm.Randomize, color.Randomize = false, false, false, false, false, false, false, false, false
 }
 
 func main() {
+	setup()
+	pullCard()
 	for {
-		if firstDraw {
-			setup()
-			pullCard()
-			firstDraw = false
-		}
 		fmt.Scanln(&input)
 		switch input {
 		case "n":
-			setBools()
+			setup()
 			pullCard()
-		case "e":
-			os.Exit(1)
+		case "e", "q":
+			os.Exit(0)
 		case "1":
-			clearBools()
-			cardable = true
-			pullCard()
+			disableAll(); card.Randomize = true; pullCard()
 		case "2":
-			clearBools()
-			texturable = true
-			pullCard()
+			disableAll(); sensory.Randomize = true; pullCard()
 		case "3":
-			clearBools()
-			emojiable = true
-			pullCard()
+			disableAll(); emoji.Randomize = true; pullCard()
 		case "4":
-			clearBools()
-			genreable = true
-			pullCard()
+			disableAll(); genre.Randomize = true; pullCard()
 		case "5":
-			clearBools()
-			chordable = true
-			pullCard()
+			disableAll(); chord.Randomize = true; pullCard()
 		case "6":
-			clearBools()
-			bpmable = true;
-			pullCard()
+			disableAll(); bpm.Randomize = true; pullCard()
 		case "7":
-			clearBools()
-			timeable = true; rhythmable = true
-			pullCard()
+			disableAll(); time.Randomize, rhythm.Randomize = true, true; pullCard()
 		case "8":
-			clearBools()
-			rhythmable = true
-			pullCard()
+			disableAll(); rhythm.Randomize = true; pullCard()
 		case "9":
-			clearBools()
-			colorable = true
-			pullCard()
-		default: fmt.Println("give me a number or press n for a new set")
+			disableAll(); color.Randomize = true; pullCard()
+		default:
+			fmt.Println("give me a number or press n for a new set")
 		}
 	}
 }
