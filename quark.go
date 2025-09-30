@@ -84,7 +84,7 @@ func pullCard() {
 	pickRandom(&time)
 	pickRandom(&rhythm)
 	pickBPM(&bpm)
-	pickColor(&color)
+	//pickColor(&color)
 
 	if chord.Randomize {
 		chordProg = nil
@@ -117,7 +117,7 @@ func pullCard() {
 		}
 	}
 
-	fmt.Printf("\n%s\n\n", colorizeText(&color))
+	fmt.Printf("\n\033[38;2;221;12;61mQUARK\033[0m\n\n")
 	fmt.Printf("Card: %s\n", card.Entry[card.Index])
 	fmt.Printf("Sensory: %s\n", sensory.Entry[sensory.Index])
 	fmt.Printf("Emoji: %s\n", emoji.Entry[emoji.Index])
@@ -159,10 +159,8 @@ func main() {
 			disableAll(); time.Randomize, rhythm.Randomize = true, true; pullCard()
 		case "8":
 			disableAll(); rhythm.Randomize = true; pullCard()
-		case "9":
-			disableAll(); color.Randomize = true; pullCard()
 		default:
-			fmt.Println("give me a number or press n/r for new sets!\n")
+			fmt.Println("give me a number 1-8 or press n/r for new sets! q/e to exit\n")
 		}
 	}
 }
