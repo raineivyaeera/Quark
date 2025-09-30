@@ -138,7 +138,7 @@ func main() {
 	for {
 		fmt.Scanln(&input)
 		switch input {
-		case "n":
+		case "n", "r":
 			setup()
 			pullCard()
 		case "e", "q":
@@ -162,7 +162,7 @@ func main() {
 		case "9":
 			disableAll(); color.Randomize = true; pullCard()
 		default:
-			fmt.Println("give me a number or press n for a new set")
+			fmt.Println("give me a number or press n/r for new sets!\n")
 		}
 	}
 }
