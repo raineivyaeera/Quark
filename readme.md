@@ -30,7 +30,7 @@ This isn't just noise either, it's a spark that leads you to somewhere very inte
 4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. (6200+ of these btw, so good luck seeing the same one twice!)
 #### (Music specific settings)
 5. Chord progression => A modal chord progression generator using all 7 modes of the major scale.
-6. BPM => The beats per minute of the song. (40 - 200 bpm)
+6. BPM => The beats per minute of the song (40 - 200 bpm).
 7. Time signature => Division of time the song is using.
 8. Rhythm => Beats to hit in the given time signature.
 
