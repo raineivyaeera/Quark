@@ -18,9 +18,9 @@ Affectionately named Quark - meaning smallest unit of matter - it means that fro
 
 This isn't just noise either, it's a spark that leads you to somewhere very interesting, it quite literally encourages and gives you the space to actively *explore*, rather than be stuck in your usual patterns and way of doing things. So often when we create, it's the same motions we operate and work off of and we dont even realize it. This shakes that up entirely by making you more intentional, aware, and feeding you new inspiration to create with. Often times I get a card pull that makes me create the most weirdly gorgeous thing that I would have NEVER created otherwise. Giving me a genre like "russian folk rock" or "hyperpop brasileiro" (Brazil mentioned). I mean, look at these cards I pulled and tell me it doesn't make you feel inspired.
 
-<img width="1853" height="795" alt="image" src="https://github.com/user-attachments/assets/7755fd77-0e6e-49f1-acb6-c71ab4168c01" />
-<img width="1864" height="731" alt="492189475-6e5688e4-a1e4-4c5b-8387-a451129173b1" src="https://github.com/user-attachments/assets/e28504e2-d14d-4575-9f74-75b2f655120b" />
-<img width="1860" height="809" alt="492190449-e4e86b26-1713-463e-ac61-ead52980d8ee" src="https://github.com/user-attachments/assets/44694e18-5ca8-4d9f-8dc8-c8acac223d1f" />
+<img width="682" height="298" alt="Quark_Screenshot_1" src="https://github.com/user-attachments/assets/ea86a18a-800d-4e5e-b1df-1f7659b586f2" />
+<img width="695" height="296" alt="Quark_Screenshot_2" src="https://github.com/user-attachments/assets/b9d5cf62-6cc7-4423-9729-7d8baffc79b5" />
+<img width="711" height="291" alt="Quark_Screenshot_3" src="https://github.com/user-attachments/assets/e05dbf15-12f2-417d-b744-36598dbe1392" />
 
 ### Catagories/Features:
 #### (General)
