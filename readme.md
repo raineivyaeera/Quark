@@ -24,8 +24,8 @@ This isn't just noise either, it's a spark that leads you to somewhere very inte
 
 ### Catagories/Features:
 #### (General)
-1. Card => The heart of the application, it gives you an abstract card that you can interpret in anyway you'd like. (60 count)
-2. Sensory => To get you thinking in terms of the 5 senses (101 count)
+1. Card => The heart of the application, it gives you an abstract card that you can interpret in anyway you'd like. (122 count)
+2. Sensory => To get you thinking in terms of the senses (162 count)
 3. Emoji => Random Emoji! (1500+ of these guys)
 4. Tone–Genre => MASSIVE genre bank for either direct music genre or as a soundtrack/tone setter while you're creating. (6200+ of these btw, so good luck seeing the same one twice!)
 #### (Music specific settings)
